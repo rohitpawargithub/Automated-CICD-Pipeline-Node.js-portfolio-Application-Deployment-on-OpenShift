@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: portfolio-website
+spec:
+  to:
+    kind: Service
+    name: portfolio-website
+  port:
+    targetPort: 8080
